@@ -204,7 +204,7 @@ namespace cashRegister
             //set all variables to 0 again, except for fixed prices
            
 
-            reciptLabel.Text = "";
+            reciptLabel.Text = "vvvvvv";
             changeLabel.Text = "";
             totalLabel.Text = "";
         }
