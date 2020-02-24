@@ -70,9 +70,9 @@ namespace cashRegister
                 //calculate total
                 fullTotal = totalTax + total;
 
-                totalLabel.Text = "Subtotal:             " + total.ToString("$#.00");
-                totalLabel.Text += "\n\nTax:                 " + totalTax.ToString("$#.00");
-                totalLabel.Text += "\n\nTotal:                " + fullTotal.ToString("$#.00");
+                totalLabel.Text = "Subtotal:  " + total.ToString("$#.00");
+                totalLabel.Text += "\nTax:    " + totalTax.ToString("$#.00");
+                totalLabel.Text += "\nTotal:   " + fullTotal.ToString("$#.00");
 
             }
             catch
@@ -92,7 +92,7 @@ namespace cashRegister
                 //display change for order
                 change = givenAmount - fullTotal;
 
-                changeLabel.Text = "Change:            " + change.ToString("$#.00");
+                changeLabel.Text = "Change:   " + change.ToString("$#.00");
 
                 if (givenAmount < fullTotal)
                 {
@@ -113,7 +113,7 @@ namespace cashRegister
         {
             //print recipt
 
-            reciptLabel.Text = "         Droid-Mart        ";
+            reciptLabel.Text = "\n\n        Droid-Mart        ";
             SoundPlayer print = new SoundPlayer(Properties.Resources.printSound1);
             print.Play();
 
@@ -204,7 +204,7 @@ namespace cashRegister
             //set all variables to 0 again, except for fixed prices
            
 
-            reciptLabel.Text = "vvvvvv";
+            reciptLabel.Text = "";
             changeLabel.Text = "";
             totalLabel.Text = "";
         }

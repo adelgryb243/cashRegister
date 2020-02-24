@@ -49,12 +49,14 @@
             // 
             // button1
             // 
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(39, 171);
+            this.button1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(39, 168);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 23);
+            this.button1.Size = new System.Drawing.Size(146, 26);
             this.button1.TabIndex = 0;
-            this.button1.Text = "calculate total";
+            this.button1.Text = "CALCULATE TOTAL";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
@@ -83,10 +85,12 @@
             // 
             this.totalLabel.BackColor = System.Drawing.SystemColors.ControlDark;
             this.totalLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.totalLabel.Font = new System.Drawing.Font("Consolas", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalLabel.Location = new System.Drawing.Point(211, 57);
             this.totalLabel.Name = "totalLabel";
             this.totalLabel.Size = new System.Drawing.Size(153, 137);
             this.totalLabel.TabIndex = 4;
+            this.totalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -138,32 +142,37 @@
             // 
             // changeButton
             // 
+            this.changeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.changeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.changeButton.Location = new System.Drawing.Point(73, 302);
+            this.changeButton.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeButton.Location = new System.Drawing.Point(39, 292);
             this.changeButton.Name = "changeButton";
-            this.changeButton.Size = new System.Drawing.Size(75, 23);
+            this.changeButton.Size = new System.Drawing.Size(132, 33);
             this.changeButton.TabIndex = 10;
-            this.changeButton.Text = "calculate change ";
+            this.changeButton.Text = "CALCULATE CHANGE";
             this.changeButton.UseVisualStyleBackColor = true;
             this.changeButton.Click += new System.EventHandler(this.ChangeButton_Click);
             // 
             // changeLabel
             // 
             this.changeLabel.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.changeLabel.Font = new System.Drawing.Font("Consolas", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.changeLabel.Location = new System.Drawing.Point(211, 266);
             this.changeLabel.Name = "changeLabel";
             this.changeLabel.Size = new System.Drawing.Size(150, 59);
             this.changeLabel.TabIndex = 11;
+            this.changeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button2
             // 
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Consolas", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(83, 358);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(197, 62);
             this.button2.TabIndex = 12;
-            this.button2.Text = "print recipt ";
+            this.button2.Text = "PRINT RECIPT";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
@@ -171,19 +180,22 @@
             // 
             this.reciptLabel.BackColor = System.Drawing.SystemColors.ControlDark;
             this.reciptLabel.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reciptLabel.Location = new System.Drawing.Point(370, 15);
+            this.reciptLabel.Location = new System.Drawing.Point(396, 15);
             this.reciptLabel.Name = "reciptLabel";
-            this.reciptLabel.Size = new System.Drawing.Size(333, 423);
+            this.reciptLabel.Size = new System.Drawing.Size(307, 423);
             this.reciptLabel.TabIndex = 13;
+            this.reciptLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // button3
             // 
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(711, 171);
+            this.button3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(711, 358);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(77, 69);
             this.button3.TabIndex = 14;
-            this.button3.Text = "new order";
+            this.button3.Text = "New Order";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
