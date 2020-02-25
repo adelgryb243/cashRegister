@@ -27,25 +27,22 @@ namespace cashRegister
   //keeping label orginized and straight
     public partial class Form1 : Form
     {
-       
+       //declaring fixed prices and tax percentage 
         const double burgerPrice = 10;
         const double fryPrice = 5;
         const double drinkPrice =2;
-      
         const double tax = 0.13;
-        double totalTax;
 
-        
+        //declaring variables for textboxes to hold given info in
         double burger;
         double fry;
         double drink;
-
+        //variables for holding the total for items and their cost including change tax and total
         double total;
         double fullTotal;
-
         double givenAmount;
         double change;
-
+        double totalTax;
 
         public Form1()
         {
@@ -57,6 +54,7 @@ namespace cashRegister
         {
             try
             {
+                //save the info typed in textboxes to assigned variables
                 burger = Convert.ToInt16(textBox1.Text);
                 fry = Convert.ToInt16(textBox2.Text);
                 drink = Convert.ToInt16(textBox3.Text);
@@ -70,6 +68,7 @@ namespace cashRegister
                 //calculate total
                 fullTotal = totalTax + total;
 
+                //display subtotal recipt
                 totalLabel.Text = "Subtotal:  " + total.ToString("$#.00");
                 totalLabel.Text += "\nTax:    " + totalTax.ToString("$#.00");
                 totalLabel.Text += "\nTotal:   " + fullTotal.ToString("$#.00");
@@ -78,7 +77,7 @@ namespace cashRegister
             catch
             {
                 //so program doesnt crash when huge numbers/letters/whatever is typed in
-                totalLabel.Text = "please enter a valid number";
+                totalLabel.Text = "DO not waste our time. Insert a valid number";
             }
             
         }
@@ -92,11 +91,12 @@ namespace cashRegister
                 //display change for order
                 change = givenAmount - fullTotal;
 
+                //display change subtotal
                 changeLabel.Text = "Change:   " + change.ToString("$#.00");
 
                 if (givenAmount < fullTotal)
                 {
-                    changeLabel.Text = "You do not have enough money.";
+                    changeLabel.Text = "You do not have enough money. Leave.";
                     //if someone doesnt have enouygh to pay, enters a number too small
                 }
 
@@ -104,7 +104,7 @@ namespace cashRegister
             }
             catch
             {
-                changeLabel.Text = "Please insert a valid number.";
+                changeLabel.Text = "Do not waste our time. Insert a valid number.";
                 
             }
         }
@@ -112,6 +112,7 @@ namespace cashRegister
         private void Button2_Click(object sender, EventArgs e)
         {
             //print recipt
+            //for every line alternate between printing sounds
 
             reciptLabel.Text = "\n\n        Droid-Mart        ";
             SoundPlayer print = new SoundPlayer(Properties.Resources.printSound1);
@@ -120,14 +121,7 @@ namespace cashRegister
             Refresh();
             Thread.Sleep(1000);
 
-            reciptLabel.Text += "\n order number";//(idk?????)
-            SoundPlayer brint = new SoundPlayer(Properties.Resources.printSound2);
-            print.Play();
-
-            Refresh();
-            Thread.Sleep(1000);
-
-            reciptLabel.Text += "\n date and time"; //??????????
+            reciptLabel.Text += DateTime.Now.ToString();
             SoundPlayer print1 = new SoundPlayer(Properties.Resources.printSound1);
             print.Play();
 
@@ -201,12 +195,26 @@ namespace cashRegister
         private void Button3_Click(object sender, EventArgs e)
         {
             //new order
+            //Clear text boxes and labels
             //set all variables to 0 again, except for fixed prices
            
-
             reciptLabel.Text = "";
             changeLabel.Text = "";
             totalLabel.Text = "";
+
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+
+            totalTax = 0;
+            burger = 0;
+            fry = 0;
+            drink = 0;
+            total = 0;
+            fullTotal = 0;
+            givenAmount = 0;
+            change = 0;
         }
 
 
