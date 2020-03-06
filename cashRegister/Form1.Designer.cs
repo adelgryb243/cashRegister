@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
+            this.subtotalButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -41,27 +41,27 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.changeButton = new System.Windows.Forms.Button();
             this.changeLabel = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.printButton = new System.Windows.Forms.Button();
             this.reciptLabel = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.newOrderButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // subtotalButton
             // 
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(39, 210);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 26);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "CALCULATE TOTAL";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.subtotalButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.subtotalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.subtotalButton.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subtotalButton.Location = new System.Drawing.Point(39, 210);
+            this.subtotalButton.Name = "subtotalButton";
+            this.subtotalButton.Size = new System.Drawing.Size(146, 26);
+            this.subtotalButton.TabIndex = 0;
+            this.subtotalButton.Text = "CALCULATE TOTAL";
+            this.subtotalButton.UseVisualStyleBackColor = true;
+            this.subtotalButton.Click += new System.EventHandler(this.Button1_Click);
             // 
             // textBox1
             // 
@@ -170,18 +170,18 @@
             this.changeLabel.TabIndex = 11;
             this.changeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // printButton
             // 
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(107, 396);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 42);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "PRINT RECEIPT";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.printButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.printButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printButton.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printButton.Location = new System.Drawing.Point(107, 396);
+            this.printButton.Name = "printButton";
+            this.printButton.Size = new System.Drawing.Size(165, 42);
+            this.printButton.TabIndex = 12;
+            this.printButton.Text = "PRINT RECEIPT";
+            this.printButton.UseVisualStyleBackColor = true;
+            this.printButton.Click += new System.EventHandler(this.Button2_Click);
             // 
             // reciptLabel
             // 
@@ -193,18 +193,18 @@
             this.reciptLabel.TabIndex = 13;
             this.reciptLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button3
+            // newOrderButton
             // 
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(711, 358);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(77, 69);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "NEW ORDER";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.newOrderButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleGreen;
+            this.newOrderButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.newOrderButton.Font = new System.Drawing.Font("Consolas", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newOrderButton.Location = new System.Drawing.Point(711, 358);
+            this.newOrderButton.Name = "newOrderButton";
+            this.newOrderButton.Size = new System.Drawing.Size(77, 69);
+            this.newOrderButton.TabIndex = 14;
+            this.newOrderButton.Text = "NEW ORDER";
+            this.newOrderButton.UseVisualStyleBackColor = true;
+            this.newOrderButton.Click += new System.EventHandler(this.Button3_Click);
             // 
             // label5
             // 
@@ -253,9 +253,9 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.newOrderButton);
             this.Controls.Add(this.reciptLabel);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.printButton);
             this.Controls.Add(this.changeLabel);
             this.Controls.Add(this.changeButton);
             this.Controls.Add(this.textBox4);
@@ -267,7 +267,7 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.subtotalButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Jawa\'s Droid-Mart";
@@ -278,7 +278,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button subtotalButton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
@@ -290,9 +290,9 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button changeButton;
         private System.Windows.Forms.Label changeLabel;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button printButton;
         private System.Windows.Forms.Label reciptLabel;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button newOrderButton;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;

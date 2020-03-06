@@ -64,8 +64,8 @@ namespace cashRegister
 
                 //display subtotal recipt
                 totalLabel.Text = "Subtotal:  " + total.ToString("$#.00");
-                totalLabel.Text += "\nTax:    " + totalTax.ToString("$#.00");
-                totalLabel.Text += "\nTotal:   " + fullTotal.ToString("$#.00");
+                totalLabel.Text += "\n    Tax:  " + totalTax.ToString("$#.00");
+                totalLabel.Text += "\n   Total:  " + fullTotal.ToString("$#.00");
 
             }
             catch
@@ -128,35 +128,35 @@ namespace cashRegister
             Refresh();
             Thread.Sleep(1000);
 
-            reciptLabel.Text += "\n Guards:      x" + guard + "      @" + guardPrice.ToString("$#.00");
+            reciptLabel.Text += "\n  Guards:      x" + guard + "     @" + guardPrice.ToString("$#.00");
             SoundPlayer print2 = new SoundPlayer(Properties.Resources.printSound1);
             print.Play();
 
             Refresh();
             Thread.Sleep(1000);
 
-            reciptLabel.Text += "\n Assistants:        x" + assistant + "     @" + assistantPrice.ToString("$#.00");
+            reciptLabel.Text += "\nAssistants:    x" + assistant + "     @" + assistantPrice.ToString("$#.00");
             SoundPlayer print6 = new SoundPlayer(Properties.Resources.printSound1);
             print.Play();
 
             Refresh();
             Thread.Sleep(1000);
 
-            reciptLabel.Text += "\n\n Subtotal:        " + total.ToString("$#.00");
+            reciptLabel.Text += "\n\n Subtotal:       " + total.ToString("$#.00");
             SoundPlayer brint7 = new SoundPlayer(Properties.Resources.printSound2);
             print.Play();
 
             Refresh();
             Thread.Sleep(1000);
 
-            reciptLabel.Text += "\n Tax:           " + totalTax.ToString("$#.00");
+            reciptLabel.Text += "\n      Tax:       " + totalTax.ToString("$#.00");
             SoundPlayer print18 = new SoundPlayer(Properties.Resources.printSound1);
             print.Play();
 
             Refresh();
             Thread.Sleep(1000);
 
-            reciptLabel.Text += "\n Total:          " + fullTotal.ToString("$#.00");
+            reciptLabel.Text += "\n    Total:       " + fullTotal.ToString("$#.00");
             SoundPlayer brint19 = new SoundPlayer(Properties.Resources.printSound2);
             print.Play();
 
@@ -170,7 +170,7 @@ namespace cashRegister
             Refresh();
             Thread.Sleep(1000);
 
-            reciptLabel.Text += "\n Change:          " + change.ToString("$#.00");
+            reciptLabel.Text += "\n Change:        " + change.ToString("$#.00");
             SoundPlayer brin019 = new SoundPlayer(Properties.Resources.printSound2);
             print.Play();
 
